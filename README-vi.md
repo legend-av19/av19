@@ -85,7 +85,10 @@ URL dưới đây là thực thể tham khảo cho thấy khái niệm [AV19] đ
 ---
 
 ## 🎬 Demo
-👉 Short demo video: [80-second example video](https://github.com/legend-av19/av19/blob/main/av19-rotation-automatic-test.mp4)
+👉 Demo video Page : [Video Preview page](https://lover938.net/amp/demo-play.html)
+
+## 🎬 Demo
+👉 Demo video URL: [Video mp4](https://github.com/legend-av19/av19/blob/main/av19-rotation-automatic-test.mp4)
 
 
 
