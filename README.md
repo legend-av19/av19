@@ -12,8 +12,8 @@ A structural model designed to unify routing, metadata, and playback flow in str
 - Indonesia: https://github.com/legend-av19/av19/blob/main/README-id.md
 
 ## 🎬 Demo
-👉 Demo video Page : [80-second example video](https://lover938.net/amp/demo-play.html)
+👉 Demo video Page : [Video Preview page](https://lover938.net/amp/demo-play.html)
 
 ## 🎬 Demo
-👉 Demo video URL: [80-second example video](https://github.com/legend-av19/av19/blob/main/av19-rotation-automatic-test.mp4)
+👉 Demo video URL: [Video mp4](https://github.com/legend-av19/av19/blob/main/av19-rotation-automatic-test.mp4)
 
