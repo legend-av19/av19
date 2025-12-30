@@ -4,8 +4,6 @@
 
 ---
 ## ライブデモ
-
-コアコンセプトを示す最小限の実装例:
 https://lover938.net/amp/demo-play.html
 ---
 
