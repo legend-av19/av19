@@ -6,8 +6,6 @@ Khái niệm này nhằm mục đích xây dựng môi trường phát trực tu
 
 ---
 ## Trình diễn trực tiếp
-
-Ví dụ thực hiện tối thiểu thể hiện các khái niệm cốt lõi:
 https://lover938.net/amp/demo-play.html
 ---
 
