@@ -6,8 +6,6 @@ Konsep ini bertujuan untuk membangun lingkungan streaming yang lebih stabil dan 
 
 ---
 ## Demo Langsung
-
-Contoh implementasi minimal yang menunjukkan konsep inti:
 https://lover938.net/amp/demo-play.html
 ---
 
