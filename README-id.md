@@ -5,6 +5,11 @@ melalui aturan yang konsisten.
 Konsep ini bertujuan untuk membangun lingkungan streaming yang lebih stabil dan efisien dengan mensistematisasikan struktur akses konten.
 
 ---
+## Demo Langsung
+
+Contoh implementasi minimal yang menunjukkan konsep inti:
+https://lover938.net/amp/demo-play.html
+---
 
 ## 📌 Tujuan Konsep (Purpose)
 
