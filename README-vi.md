@@ -5,6 +5,11 @@ theo các quy tắc nhất quán.
 Khái niệm này nhằm mục đích xây dựng môi trường phát trực tuyến ổn định và hiệu quả hơn bằng cách tiêu chuẩn hóa cấu trúc truy cập nội dung.
 
 ---
+## Trình diễn trực tiếp
+
+Ví dụ thực hiện tối thiểu thể hiện các khái niệm cốt lõi:
+https://lover938.net/amp/demo-play.html
+---
 
 ## 📌 Mục đích khái niệm (Purpose)
 
