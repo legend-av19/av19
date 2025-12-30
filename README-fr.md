@@ -4,6 +4,11 @@
 Ce concept vise à standardiser la structure d'accès au contenu afin de créer un environnement de streaming plus stable et plus efficace.
 
 ---
+## Démonstration en direct
+
+Exemple d'implémentation minimale illustrant les concepts clés :
+https://lover938.net/amp/demo-play.html
+---
 
 ## 📌 Concept Objectif (Purpose)
 
