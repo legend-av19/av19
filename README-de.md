@@ -5,6 +5,9 @@ durch einheitliche Regeln zu beschreiben.
 Dieses Konzept zielt darauf ab, eine stabilere und effizientere Streaming-Umgebung zu schaffen, indem die Struktur des Zugriffs auf Inhalte standardisiert wird.
 
 ---
+## Live Demo
+https://lover938.net/amp/demo-play.html
+---
 
 ## 📌 Zweck des Konzepts
 
