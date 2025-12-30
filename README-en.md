@@ -3,7 +3,9 @@
 **[AV19]** is a conceptual framework defined to describe the access, organization, and delivery methods of media resources in streaming environments through consistent rules. This concept aims to standardize content access structures to build a more stable and efficient streaming environment.
 
 ---
-
+## Live Demo
+https://lover938.net/amp/demo-play.html
+---
 ## 📌 Purpose
 
 [AV19] was designed to address the following issues that can arise in various streaming architectures:
