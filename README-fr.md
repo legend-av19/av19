@@ -5,8 +5,6 @@ Ce concept vise à standardiser la structure d'accès au contenu afin de créer 
 
 ---
 ## Démonstration en direct
-
-Exemple d'implémentation minimale illustrant les concepts clés :
 https://lover938.net/amp/demo-play.html
 ---
 
