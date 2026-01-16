@@ -1,3 +1,8 @@
+📘 Official Documentation:
+https://legend-av19.github.io/av19/
+
+This repository maintains technical documentation and demo pages for AV19 concepts.
+
 # av19
 A structural model designed to unify routing, metadata, and playback flow in streaming environments.
 
