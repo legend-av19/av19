@@ -1,11 +1,10 @@
-
 <!doctype html>
 <html lang="ko">
 <head>
   <meta charset="utf-8">
   <link rel="icon" type="image/png" href="favicon.png">
   <title>AV19 공식 문서</title>
-  <meta name="description" content="AV19 개념의 정의, 원천 개념, 기술 데모를 제공하는 공식 문서 페이지입니다. AV19의 기술이 적용된 콘텐츠 사이트 소개.">
+  <meta name="description" content="AV19 개념의 정의, 원천 개념, 기술 데모를 제공하는 공식 문서 페이지입니다. AV19의 기술이 적용된 동영상 콘텐츠 사이트 첨부.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
     body {
@@ -42,7 +41,7 @@
 {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  "name": "AV19 Streaming Tech Docs",
+  "name": "AV19 Streaming Video Tech Docs",
   "url": "https://legend-av19.github.io/av19/",
   "publisher": {
     "@type": "Organization",
@@ -60,7 +59,7 @@
   <ul>
     <li>
       <a href="https://lover938.net/amp/" target="_blank">
-        AV19 Site
+        AV19 동영상 콘텐츠 사이트
       </a>
     <p>'AV19' 공식 주소 및 자체 깃허브에 소개된 스트리밍 기술이 적용된 동영상 콘텐츠 사이트.</p>  
     </li>
@@ -70,16 +69,82 @@
       </a>
     </li>
     <li>
-      <a href="https://github.com/legend-av19/av19/blob/main/README-ko.md" target="_blank">
-        Documentation
-      </a>
-    </li>
-    <li>
       <a href="https://lover938.net/amp/demo-play.html" target="_blank">
         Demo / Example
       </a>
     </li>
   </ul>
+<h2>AV19 스트리밍 기술 소개</h2>
+<p>이 저장소는 AV19 개념의 기술 문서와 데모 페이지를 관리합니다.<br>
+[AV19] – 기술적 정의(Technical Definition)<br>
+**[AV19]**는 스트리밍 환경에서 미디어 리소스의 접근, 구성, 전달 방식을<br>
+일관된 규칙으로 설명하기 위해 정의된 개념적 프레임워크이다.<br>
+이 개념은 콘텐츠 접근 구조를 표준화하여 보다 안정적이고 효율적인 스트리밍 환경을 구축하는 것을 목표로 한다.<br>
+또한, 핵심 기능인 세로인코딩된 영상을 동영상 전체화면시 가로로 변환하는 기능을 정리한다.</p>
+<aside>
+📌 라이브 데모<br>
+<p>핵심 개념을 보여주는 최소한의 구현 예시:<br> 
+<a href="https://lover938.net/amp/demo-play.html">전체화면시 화면 자동변환영상 샘플 페이지.</a><br>
+AV19 Website: <br>
+<a href="https://lover938.net/amp/">AV19 기술이 적용된 동영상 콘텐츠 사이트</a></p>
+</aside>
+<aside>
+📌 개념 목적 (Purpose)<br>
+<p>[AV19]는 다양한 스트리밍 구조에서 발생할 수 있는 다음과 같은 문제들을 해결하기 위해 고안되었다.</p>
+<p>리소스 경로의 비일관성<br>
+메타데이터 처리 방식의 차이<br>
+스트리밍 품질 및 세션 유지 문제<br>
+탐색 구조의 단절<br>
+이 개념은 스트리밍 콘텐츠를 보다 일관된 구조로 관리할 수 있게 해준다.</p>
+</aside>
+<aside>
+🧩 구성 요소 (Components)
+<ol>
+<li>
+<p>Entry Point<br>
+콘텐츠 스트림 요청의 시작점으로, 단순화된 URL 규칙을 기반으로 한다.</p>
+</li>
+<li>
+<p>Playback Layer<br>
+버퍼링・품질 선택・로드 흐름 등을 포함한 재생 관련 동작을 담당한다.</p>
+</li>
+<li>
+<p>Navigation Layer<br>
+사용자가 콘텐츠 간을 자연스럽게 이동할 수 있도록 구조적 연결을 제공한다.</p>
+</li>
+</ol>
+</aside>
+<aside>
+⚙️ 예시 구조 (Structure Example)<br>
+<p>아래는 [AV19] 개념을 설명하기 위한 예시 구조이다.</p>
+<p>/content/<br>
+├─ stream/<br>
+│    ├─ {id}/<br>
+│    └─ {quality}/<br>
+└─ meta/<br>
+└─ {info}/<br>
+※ 실제 구현은 서비스마다 달라질 수 있으며, 본 예시는 기술 개념 설명용이다.</p>
+</aside>
+<aside>
+📐 권장 구현 방식 (Recommended Implementation)<br>
+<p>상대경로(relative path)를 사용하여 환경 간 호환성을 유지한다.<br>
+메타데이터와 스트림 리소스를 분리하여 관리한다.<br>
+불필요한 로딩을 줄이기 위해 캐싱 정책을 적용한다.<br>
+URL 패턴은 가능한 단순하고 예측 가능하게 유지한다.<br></p>
+</aside>
+<aside>
+📐 핵심 구현 원리<br>
+<p>style 태그와 로테이션 script를 조합후 Windows OS의 전체화면 트리거시, 화면이 재랜더링된후 화면 비율에 맞게 재확장.<br>
+이는 세로로 인코딩된 영상을 가로로 완벽하게 회전하는 기법이다.<br>
+주의점: 윈도우의 전체화면 랜더링이 끝난 이후에 최종 조정을 완료해야 화면이 튕겨나기지 않고 정상으로 가로모드로 전환된다.<br>
+이 방식은 전체화면 렌더링 구조의 특성 때문에 기존 솔루션들이 충분히 다루지 못했던 문제를 타이밍 기반 조정 방식으로 해결한 구현 예이며, 다양한 플레이어 환경에서도 활용 가능한 기법으로 평가된다.</p>
+</aside>
+<aside>
+🔗 참고 링크 (Reference)<br>
+<p>아래의 URL은 [AV19] 개념이 실제 서비스 환경에서<br>
+어떻게 구조적으로 적용되는지를 보여주는 참고한 구현체이다.</p>
+<a href="https://lover938.net/amp/">AV19 기술이 적용된 동영상 콘텐츠 사이트</a>
+</aside>
 </body>
 </html>
 
