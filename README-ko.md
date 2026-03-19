@@ -92,7 +92,7 @@ https://lover938.net/amp/demo-play.html
 아래의 URL은 [AV19] 개념이 실제 서비스 환경에서  
 어떻게 구조적으로 적용되는지를 보여주는 참고한 구현체이다.
 
-- Official Website: https://lover938.net/amp/
+- AV19 Video Website: https://lover938.net/amp/
 
 ---
 
